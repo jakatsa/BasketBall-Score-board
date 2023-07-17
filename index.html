@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Dm2VkvkCIIZi6k1rV4FmXRNbTf4jD6wF3RU/D3u2b3RSiSVGeQpSd2Ta6oGKVr3t" crossorigin="anonymous">
+    <title>Basket Ball ScoreBoard</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text"></h1>
+        <div class="row scoreboard">
+           <div class="col-md-6 team-container"> <!-- Adjust the column size based on your design -->
+              <h2 class="text">HOME</h2>
+              <div class="one">
+                 <p class="pts" id="Count-El" >0</p>
+                 <p class="pts-shadow">000</p>
+              </div>
+              <div class="row two"> <!-- Wrap the buttons inside a row -->
+                <div class="col-md-4">
+                    <button class="btn btn-primary" id="one-pt" onclick="one()">
+                        <span class="btn-content">+1</span>
+                      </button>
+                 </div>
+                 <div class="col-md-4">
+                    <button class="btn btn-primary" id="two-pt" onclick="two()">
+                        <span class="btn-content">+2</span>
+                      </button>
+                 </div>
+                 <div class="col-md-4">
+                    <button class="btn btn-primary" id="three-pt" onclick="three()">
+                        <span class="btn-content">+3</span>
+                      </button>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-6 team-container"> <!-- Adjust the column size based on your design -->
+              <h2 class="text">GUEST</h2>
+              <div class="one">
+                 <p class="pts" id="Count-LE">0</p>
+                 <p class="pts-shadow">000</p>
+              </div>
+              <div class="row two"> <!-- Wrap the buttons inside a row -->
+                 <div class="col-md-4">
+                    <button class="btn btn-primary" id="one-pt" onclick="ones()">
+                        <span class="btn-content">+1</span>
+                      </button>
+                 </div>
+                 <div class="col-md-4">
+                    <button class="btn btn-primary" id="two-pt" onclick="twos()">
+                        <span class="btn-content">+2</span>
+                      </button>
+                 </div>
+                 <div class="col-md-4">
+                    <button class="btn btn-primary" id="three-pt" onclick="threes()">
+                        <span class="btn-content">+3</span>
+                      </button>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <footer>
+        <p class="footer">Made by <a href="#">Joe Akatsa</a></p>
+        <p class="footer">Website made as part of the JavaScript Course provided by <a href="https://scrimba.com/">Scrimba</a></p>
+     </footer>
+     <script src="index.js"></script>
+</body>
+</html>
